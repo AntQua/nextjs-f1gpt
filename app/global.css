@@ -80,6 +80,19 @@ input:focus {
   outline: none;
 }
 
+/* Bubble Styles */ 
+.bubble { 
+  margin: 8px auto; 
+  padding: 8px; 
+  font-size: 15px; 
+  border: none;
+  color: #383838;
+  box-shadow: 0 8px 24px #959da533; 
+  width: 80%; 
+  text-align: left; 
+} 
+ 
+
 /* Loader Styles */
 .loader {
   margin: 10px;

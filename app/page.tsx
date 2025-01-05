@@ -12,7 +12,7 @@ const Home = () => {
   // Extract functions and state from useChat
   const {
     append,
-    //isLoading,
+    isLoading,
     messages,
     input,
     handleInputChange,
@@ -22,7 +22,7 @@ const Home = () => {
   const noMessages = false; // Temporary: This will change dynamically later.
 
   // Temporarily hardcode isLoading for testing
-  const isLoading = true; // Change to false to hide the loading bubble
+  //const isLoading = true; // Change to false to hide the loading bubble
 
   return (
     <main>
@@ -43,7 +43,12 @@ const Home = () => {
           </>
         ) : (
           <>
-            {/* map messages onto text bubbles */}
+            {messages.map((message, index) => (
+              <Bubble
+                key={`message-${index}`}
+                message={message}
+              />
+            ))}
             {isLoading && <LoadingBubble />}
           </>
         )}
