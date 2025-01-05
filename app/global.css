@@ -82,7 +82,7 @@ input:focus {
 
 /* Bubble Styles */ 
 .bubble { 
-  margin: 8px auto; 
+  margin: 8px; 
   padding: 8px; 
   font-size: 15px; 
   border: none;
@@ -95,12 +95,14 @@ input:focus {
 .bubble.user {
   border-radius: 20px 20px 0 20px;
   background-color: #E1F4FFFF;
-  margin-left: auto;
+  /* margin-left: auto; */
+  align-self: flex-end;
 }
 
 .bubble.assistant {
   border-radius: 20px 20px 20px 0;
   background-color: #dce7ff;
+  align-self: flex-start;
 }
 
 /* Prompt Suggestions Row */
