@@ -19,10 +19,19 @@ const Home = () => {
     handleSubmit,
   } = useChat();
 
-  const noMessages = false; // Temporary: This will change dynamically later.
+  const noMessages = !messages || messages.length === 0;
 
   // Temporarily hardcode isLoading for testing
   //const isLoading = true; // Change to false to hide the loading bubble
+
+  const handlePrompt = ( promptText) => {
+    const msg: Message = {
+      id: crypto.randomUUID(),
+      content: promptText,
+      role: "user",
+    };
+    append(msg)
+  };
 
   return (
     <main>
@@ -39,15 +48,12 @@ const Home = () => {
             </p>
             <br />
             {/* Placeholder for Prompt Suggestions */}
-            <PromptSuggestionsRow />
+            <PromptSuggestionsRow onPromptClick={handlePrompt} />
           </>
         ) : (
           <>
             {messages.map((message, index) => (
-              <Bubble
-                key={`message-${index}`}
-                message={message}
-              />
+              <Bubble key={`message-${index}`} message={message} />
             ))}
             {isLoading && <LoadingBubble />}
           </>

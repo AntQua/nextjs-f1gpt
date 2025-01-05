@@ -92,6 +92,41 @@ input:focus {
   text-align: left; 
 } 
  
+.bubble.user {
+  border-radius: 20px 20px 0 20px;
+  background-color: #E1F4FFFF;
+  margin-left: auto;
+}
+
+.bubble.assistant {
+  border-radius: 20px 20px 20px 0;
+  background-color: #dce7ff;
+}
+
+/* Prompt Suggestions Row */
+.prompt-suggestion-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.prompt-suggestion-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.prompt-suggestion-button:hover {
+  background-color: #e0e0e0;
+}
+
 
 /* Loader Styles */
 .loader {
