@@ -1,0 +1,81 @@
+* {
+  font-family: Verdana, Tahoma, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("assets/background.png");
+}
+
+main {
+  width: 80vw;
+  height: 80vh;
+  background: linear-gradient(to bottom, #f8f8f8, #cfcfcf);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  text-align: center;
+  color: #383838;
+}
+
+/* Section for Starter Text and Messages */
+section {
+  width: 100%;
+}
+
+section.populated {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: scroll;
+}
+
+.starter-text {
+  padding: 0 80px;
+  color: #555;
+}
+
+/* Form Styling */
+.chat-form {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  border-top: 2px solid #828282;
+  padding-top: 20px;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+
+input.question-box {
+  width: 85%;
+  padding: 10px;
+  font-size: 15px;
+  color: #383838;
+  border: none;
+}
+
+input[type="submit"] {
+  width: 15%;
+  border: none;
+  font-size: 15px;
+  padding: 15px;
+  color: #fff;
+  background-color: #411b8d;
+}
+
+input[type="submit"]:hover {
+  background-color: #733be2;
+}
+
+input:focus {
+    outline: none;
+}

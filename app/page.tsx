@@ -3,12 +3,18 @@
 import Image from "next/image";
 import { useChat } from "ai/react";
 import { Message } from "ai";
-import F1GPTLogo from "./assets/F1GPTLogo.webp";
+import F1GPTLogo from "./assets/F1GPTLogo.png";
 
 const Home = () => {
   // Extract functions and state from useChat
-  const { append, isLoading, messages, input, handleInputChange, handleSubmit } =
-    useChat();
+  const {
+    append,
+    isLoading,
+    messages,
+    input,
+    handleInputChange,
+    handleSubmit,
+  } = useChat();
 
   const noMessages = true; // Temporary: This will change dynamically later.
 
@@ -35,18 +41,18 @@ const Home = () => {
             {/* <LoadingBubble/> */}
           </>
         )}
-        {/* Input Form */}
-        <form className="chat-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            className="question-box"
-            placeholder="Ask me something..."
-            value={input}
-            onChange={handleInputChange}
-          />
-          <input type="submit" />
-        </form>
       </section>
+      {/* Input Form */}
+      <form className="chat-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          className="question-box"
+          placeholder="Ask me something..."
+          value={input}
+          onChange={handleInputChange}
+        />
+        <input type="submit" />
+      </form>
     </main>
   );
 };
