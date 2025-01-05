@@ -68,7 +68,7 @@ const Home = () => {
           value={input}
           onChange={handleInputChange}
         />
-        <input type="submit" />
+        <input type="submit" value="Send"/>
       </form>
     </main>
   );

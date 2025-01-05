@@ -104,7 +104,7 @@ input:focus {
 }
 
 /* Prompt Suggestions Row */
-.prompt-suggestion-row {
+/* .prompt-suggestion-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -125,6 +125,35 @@ input:focus {
 
 .prompt-suggestion-button:hover {
   background-color: #e0e0e0;
+} */
+
+/* Prompt Suggestion Button */
+.prompt-suggestion-button {
+  margin: 8px;
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  color: #383838; /* Dark gray text */
+  box-shadow: 0 8px 24px #959da533; /* Subtle shadow */
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.prompt-suggestion-button:hover {
+  background-color: #f7f7f7; /* Slightly darker background on hover */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Prompt Suggestion Row */
+.prompt-suggestion-row {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0; */
+  width: 100%;
 }
 
 
