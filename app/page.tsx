@@ -4,6 +4,9 @@ import Image from "next/image";
 import { useChat } from "ai/react";
 import { Message } from "ai";
 import F1GPTLogo from "./assets/F1GPTLogo.png";
+import Bubble from "./components/Bubble";
+import PromptSuggestionsRow from "./components/PromptSuggestionsRow";
+import LoadingBubble from "./components/LoadingBubble";
 
 const Home = () => {
   // Extract functions and state from useChat
@@ -33,12 +36,12 @@ const Home = () => {
             </p>
             <br />
             {/* Placeholder for Prompt Suggestions */}
-            {/* <PromptSuggestionRow /> */}
+            <PromptSuggestionsRow />
           </>
         ) : (
           <>
             {/* map messages onto text bubbles */}
-            {/* <LoadingBubble/> */}
+            <LoadingBubble/>
           </>
         )}
       </section>
