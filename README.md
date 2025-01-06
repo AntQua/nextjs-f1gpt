@@ -5,10 +5,11 @@ F1GPT is a Retriever-Augmented Generation (RAG) chatbot designed to provide up-t
 
 ---
 
-### **Live Demo**  
-[https://nextjs-f1gpt-pppsrc5cx-antquas-projects.vercel.app/](https://nextjs-f1gpt-pppsrc5cx-antquas-projects.vercel.app/)
+### **[Live Demo](https://nextjs-f1gpt-pppsrc5cx-antquas-projects.vercel.app/)**  
 
-![App Snapshot](https://drive.google.com/file/d/1ygjD600DuiD2DA9g8-sAuL43DmIYDVU0/view?usp=sharing)
+
+![App Snapshot](https://drive.google.com/uc?id=1ygjD600DuiD2DA9g8-sAuL43DmIYDVU0)
+
 
 ---
 
